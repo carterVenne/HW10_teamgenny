@@ -1,7 +1,7 @@
 # HW10_teamgenny
 # My Experience
 
-# Descrption
+# Description
 
 # User Story
 As a manager
@@ -23,3 +23,6 @@ Author: Carter Venne
 Github repository: https://github.com/carterVenne/HW10_teamgenny
 
 Email: cartervenne@gmail.com
+
+# License
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
