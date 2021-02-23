@@ -14,7 +14,7 @@ Run this app in any coding terminal. Using Javascript and NODE.js you must first
 npm i
 ```
 to install the necessary dependencies. Then you may run the program using the command:
- ```bash
+```bash
 node app.js
 ```
 
@@ -26,6 +26,11 @@ Link to video walkthrough for this application:
 To contribute on this application please fork the repo on github, clone the repository for personal use, commit to your own branch then push work to your fork and pull request for review and approval.
 
 # Tests
+Running command:
+```bash
+npm test
+```
+will allow for testing of the ability to create and retrieve information for the entirety of the Employee class and it's subclasses.
 
 # Questions
 If you have anything to to contribute or discuss about thsi project please contact me:
