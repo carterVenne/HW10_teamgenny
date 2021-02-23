@@ -12,6 +12,7 @@ so that I have quick access to emails and GitHub profiles
 
 # Usage
 
+Link to video walkthrough for this application:
 # Contributions
 
 # Tests
