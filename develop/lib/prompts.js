@@ -28,30 +28,33 @@ const prompt = [
         type: 'input',
         name: 'officeNumber',
         message: "What is this manager's office number?",
-        when: function (employee) {
-            return employee.role === "Manager";
+        when: function (response) {
+            return response.role === "Manager";
         },
+        default: '000',
     },
     {
         type: 'input',
         name: 'github',
         message: "What is this engineer's GitHub username?",
-        when: function (employee) {
-            return employee.role === "Engineer";
+        when: function (response) {
+            return response.role === "Engineer";
         },
+        default: 'supercoder'
     },
     {
         type: 'input',
         name: 'school',
         message: 'What school is this intern attending or most recently attended?',
-        when: function (employee) {
-            return employee.role === "Intern";
+        when: function (response) {
+            return response.role === "Intern";
         },
+        default: 'The School of Hard Knocks',
     },
     {
-        type: "confirm",
-        name: "anotherOne",
-        message: "Do you have another employee to add?",
+        type: 'confirm',
+        name: 'anotherOne',
+        message: 'Do you have another employee to add?',
         default: true
     },
 ];
