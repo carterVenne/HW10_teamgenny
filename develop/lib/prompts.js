@@ -25,27 +25,27 @@ const prompt = [
         default: 'johnsmith@yahoo.com'
     },
     {
-        type: 'input', 
-        name: 'officeNumber', 
+        type: 'input',
+        name: 'officeNumber',
         message: "What is this manager's office number?",
-        when: function (answers) {
-            return answers.role === "Manager";
+        when: function (employee) {
+            return employee.role === "Manager";
         },
     },
     {
-        type: 'input', 
-        name: 'github', 
+        type: 'input',
+        name: 'github',
         message: "What is this engineer's GitHub username?",
-        when: function (answers) {
-            return answers.role === "Engineer";
+        when: function (employee) {
+            return employee.role === "Engineer";
         },
     },
     {
-        type: 'input', 
-        name: 'school', 
+        type: 'input',
+        name: 'school',
         message: 'What school is this intern attending or most recently attended?',
-        when: function (answers) {
-            return answers.role === "Intern";
+        when: function (employee) {
+            return employee.role === "Intern";
         },
     },
     {
