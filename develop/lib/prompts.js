@@ -10,7 +10,7 @@ const prompt = [
         type: 'input',
         name: 'name',
         message: "What is this employee's name?",
-        default: 'Name'
+        default: 'My Name is JEFF'
     },
     {
         type: 'input',
