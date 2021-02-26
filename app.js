@@ -19,7 +19,7 @@ function newTeamMember() {
         info.name,
         info.id,
         info.email,
-        info.officeNum
+        info.officeNumber
         );
     } 
     else if (info.role === "Engineer") {

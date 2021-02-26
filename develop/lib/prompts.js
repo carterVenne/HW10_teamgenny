@@ -26,7 +26,7 @@ const prompt = [
     },
     {
         type: 'input', 
-        name: 'officeNum', 
+        name: 'officeNumber', 
         message: "What is this manager's office number?",
         when: function (answers) {
             return answers.role === "Manager";
