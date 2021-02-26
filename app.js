@@ -9,7 +9,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./develop/lib/htmlRenderer");
 
-function newTeamMember() {
+function newTeam() {
     return inquirer.prompt(prompt).then((response) => {
         let info = response;
         let newEmployee = "";
@@ -38,8 +38,8 @@ function newTeamMember() {
         );
     }
     employees.push(newEmployee);
-    if (response.anotherOne) {
-        newTeamMember();
+    if (info.anotherOne) {
+        newTeam();
     } 
     else {
         console.log(employees);
@@ -47,4 +47,4 @@ function newTeamMember() {
     }
 });
 }
-newTeamMember();
+newTeam();

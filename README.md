@@ -1,7 +1,6 @@
 # HW10_teamgenny
 ### My Experience
-
-### Description
+I got all the tests to pass but I couldn't get the subclass specific questions to run and the HTML won't generate. This is basically a great failure.
 
 ### User Story
 As a manager
