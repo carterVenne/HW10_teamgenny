@@ -28,6 +28,24 @@ inquirer.prompt([
         default: 'johnsmith@yahoo.com'
     },
     {
+        type: 'input', 
+        name: 'officeNumber', 
+        message: "What is this manager's office number?",
+        when: (responses) => responses.role === 'Manager'
+    },
+    {
+        type: 'input', 
+        name: 'github', 
+        message: "What is this engineer's GitHub username?",
+        when: (responses) => responses.role === 'Engineer'
+    },
+    {
+        type: 'input', 
+        name: 'school', 
+        message: 'What school is this intern attending or most recently attended?',
+        when: (responses) => responses.role === 'Intern'
+    },
+    {
         type: "confirm",
         name: "anotherOne",
         message: "Do you have another employee to add?",

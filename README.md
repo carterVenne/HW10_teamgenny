@@ -9,7 +9,7 @@ I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 
 ### Installation
-Run this app in any coding terminal. Using Javascript and NODE.js you must first use command:
+Run this app in any coding terminal. Using NODE.js you must first use command:
 ```bash
 npm i
 ```
@@ -19,6 +19,7 @@ node app.js
 ```
 
 ### Usage
+Following the install directions listed above you will be led through a series of prompts asking for basic infor on your team members, once complete an HTML doocument will generate based off your inputs.
 
 Link to video walkthrough for this application:
 
