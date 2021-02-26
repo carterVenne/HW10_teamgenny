@@ -29,7 +29,7 @@ inquirer.prompt([
     },
     {
         type: 'input', 
-        name: 'officeNumber', 
+        name: 'officeNum', 
         message: "What is this manager's office number?",
         when: (responses) => responses.role === 'Manager'
     },

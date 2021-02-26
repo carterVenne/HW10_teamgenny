@@ -1,3 +1,4 @@
+//super class to define the "employee"
 class Employee {
     constructor(email, id, name){
       this.email = email;
