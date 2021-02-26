@@ -1,7 +1,4 @@
-const inquirer = require("inquirer")
-const fs = require("fs")
-
-inquirer.prompt([
+const prompt = [
     {
         type: 'checkbox',
         name: 'role',
@@ -57,6 +54,6 @@ inquirer.prompt([
         message: "Do you have another employee to add?",
         default: true
     },
-]);
+];
 
-module.exports = prompts
+module.exports = prompt
