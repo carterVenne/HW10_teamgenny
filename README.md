@@ -21,7 +21,8 @@ node app.js
 Following the install directions listed above you will be led through a series of prompts asking for basic infor on your team members, once complete an HTML doocument will generate based off your inputs.
 
 Link to video walkthrough for this application:
-
+https://drive.google.com/file/d/1uVeUhCe3KowXvsM7DZkHDOWHnKK7F6eY/view
+ 
 ### Contributions
 To contribute on this application please fork the repo on github, clone the repository for personal use, commit to your own branch then push work to your fork and pull request for review and approval.
 
