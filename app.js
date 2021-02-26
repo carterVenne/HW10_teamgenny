@@ -3,7 +3,6 @@ const Engineer = require("./develop/lib/Engineer");
 const Intern = require("./develop/lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
-const fs = require("fs");
 const prompt = require("./develop/lib/prompts");
 const employees = [];
 const OUTPUT_DIR = path.resolve(__dirname, "output");
