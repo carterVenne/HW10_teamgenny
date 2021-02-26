@@ -31,19 +31,25 @@ inquirer.prompt([
         type: 'input', 
         name: 'officeNum', 
         message: "What is this manager's office number?",
-        when: (responses) => responses.role === 'Manager'
+        when: function (answers) {
+            return answers.role === "Manager";
+        },
     },
     {
         type: 'input', 
         name: 'github', 
         message: "What is this engineer's GitHub username?",
-        when: (responses) => responses.role === 'Engineer'
+        when: function (answers) {
+            return answers.role === "Engineer";
+        },
     },
     {
         type: 'input', 
         name: 'school', 
         message: 'What school is this intern attending or most recently attended?',
-        when: (responses) => responses.role === 'Intern'
+        when: function (answers) {
+            return answers.role === "Intern";
+        },
     },
     {
         type: "confirm",
@@ -51,6 +57,6 @@ inquirer.prompt([
         message: "Do you have another employee to add?",
         default: true
     },
-])
+]);
 
 module.exports = prompts

@@ -11,8 +11,8 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 function newTeamMember() {
-    return inquirer.prompt(prompt).then((respObject) => {
-        let info = respObject;
+    return inquirer.prompt(prompt).then((response) => {
+        let info = response;
         let newEmployee = "";
         if (info.role === "Manager") {
         newEmployee = new Manager(
@@ -39,7 +39,7 @@ function newTeamMember() {
         );
     }
     employees.push(newEmployee);
-    if (respObject.anotherOne) {
+    if (response.anotherOne) {
         newTeamMember();
     } 
     else {

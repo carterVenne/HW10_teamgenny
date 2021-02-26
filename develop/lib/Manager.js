@@ -1,9 +1,9 @@
  const Employee = require("./Employee")
-//class defining "manager"
+//subclass defining "manager"
 class Manager extends Employee {
     constructor(officeNum, email, id, name){
-        super(email, id, name)
-        this.officeNum = officeNum
+        super(email, id, name);
+        this.officeNum = officeNum;
     }
     getOfficeNum() {
         return this.officeNum;
@@ -12,4 +12,4 @@ class Manager extends Employee {
         return "Manager";
     }
 }
-module.exports = Manager
+module.exports = Manager;
