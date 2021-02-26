@@ -51,6 +51,6 @@ inquirer.prompt([
         message: "Do you have another employee to add?",
         default: true
     },
-]).then((data) => {
+])
 
-})
+module.exports = prompts
